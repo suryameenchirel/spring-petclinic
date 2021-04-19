@@ -42,6 +42,19 @@
         <cobertura.version>2.7</cobertura.version>
 
     </properties>
+    
+        <distributionManagement>
+    <repository>
+	    <id>nexus</id>
+		  <name>maven-releases</name>
+		  <url>http://localhost:8081/repository/maven-releases/</url>
+	  </repository>
+	  <snapshotRepository>
+	     <id>nexus</id>
+		   <name>maven-snapshots</name>
+		   <url>http://localhost:8081/repository/maven-snapshots/</url>
+	  </snapshotRepository>
+  </distributionManagement>
 
     <dependencyManagement>
         <!-- Import the maven Spring IO Platform Bill Of Materials (BOM) -->
